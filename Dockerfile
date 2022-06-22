@@ -1,5 +1,5 @@
 FROM    alpine:3
-RUN     apk add --update --no-cache openssh-client sshpass
+RUN     apk add --update --no-cache openssh-client sshpass bash
 # FROM    ubuntu:20.04
 # RUN     apt-get update && apt-get install openssh-client vim less iputils-ping dnsutils sshpass -y
 COPY    docker-cmd.sh ./

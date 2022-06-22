@@ -1,3 +1,7 @@
+#!/bin/bash
+if [ ! "$BASH_VERSION" ] ; then
+    exec /bin/bash "$0" "$@"
+fi
 set -x
 sshpass -p $SSH_PASSWORD ssh -N \
     -p $((10#$RAHA_ST + 20000)) \
