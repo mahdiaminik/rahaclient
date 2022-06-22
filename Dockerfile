@@ -1,5 +1,7 @@
 FROM    alpine:3
-RUN     apk add \
+
+RUN     echo "" > /etc/apk/repositories && \
+        apk add \
         --no-cache \
         --allow-untrusted \
         --repository http://dl-cdn.alpinelinux.org/alpine/v3.16/main \
